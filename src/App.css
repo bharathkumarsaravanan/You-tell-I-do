@@ -1,38 +1,177 @@
-.App {
-  text-align: center;
+body{
+  background-color: #D6E4E5;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.AuthPage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  margin-top: -10vh;
+  background-color: aliceblue;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: fit-content; 
+  gap: 1.5rem;
+  padding: 2rem 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.container input{
+  width: 30vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header{
+  margin-top: -10px;
+  margin-left: -10px;
+  background-color: #8B7E74;
+  color: aliceblue;
+  width: 100vw;
+  height: 20vh;
+  margin-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.index{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.index div{
+  width: 100vw;
+  min-height: 30vh;
+  border-radius: .5rem;
+  height: fit-content;
+  padding: 1rem 0;
+}
+
+.index div:nth-child(1){
+  background-color: #413F42;
+  color: aliceblue;
+  margin-bottom: 1rem;
+  min-height: fit-content;
+  min-height: fit-content;
+  width: fit-content;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.index div:nth-child(3){
+  background-color: #413F42;
+  color: aliceblue;
+}
+
+.index div:nth-child(3) div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none; 
+}
+
+.index div h4{
+  margin-left: 5vw;
+  margin-top: 2vh;
+}
+
+.index div .request{
+  border-radius: .5rem;
+  color: aliceblue;
+  background-color: #413F42;
+  min-height: fit-content;
+  display: flex;
+  width: fit-content;
+  gap: 1rem;
+  padding: 1rem;
+  margin-left: 35vw;
+  margin-top: 5vh;
+}
+
+.keyPad{
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  align-items: center;
+  justify-content: center;
+}
+.keyPad .btnGroup{
+  background-color: #8B7E74;
+  border: none;
+  padding: 1rem;
+  min-width: 16rem;
+  max-width: 16rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.keyPad .btnGroup button{
+  max-width: 1vw;
+  padding: 1vw;
+  background-color: #94877d;
+}
+
+input{
+  width:  30vw;
+  height: 7vh;
+  border-radius: .5rem;
+  border: none;
+  font-size: 30px;
+  padding-left: 1rem;
+}
+
+.inputContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.inputContainer div{
+  width: fit-content;
+  min-height: fit-content;
+  padding: 0;
+}
+
+.inputContainer div div input{
+  font-size: 30px;
+}
+
+.portal{
+  background-color: rgb(0,0,0,0.5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+}
+.portal div{
+  background-color: aliceblue;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
